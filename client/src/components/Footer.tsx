@@ -6,9 +6,9 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="space-y-4">
-            <h3 className="font-serif text-2xl font-bold">Aurelle</h3>
+            <h3 className="font-serif text-xl font-bold uppercase">The Beige.in</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Elevating everyday style with timeless pieces and sustainable luxury. Designed for the modern muse.
+              Curated luxury jewelry for the modern minimalist.
             </p>
           </div>
           

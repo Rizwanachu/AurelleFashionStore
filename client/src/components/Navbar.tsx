@@ -74,7 +74,7 @@ export function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2">
-            <h1 className="text-3xl font-serif font-bold tracking-tight cursor-pointer">Aurelle</h1>
+            <h1 className="text-2xl font-serif font-bold tracking-tight cursor-pointer uppercase">The Beige.in</h1>
           </Link>
 
           {/* Icons */}
