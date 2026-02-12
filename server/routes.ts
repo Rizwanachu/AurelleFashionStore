@@ -144,54 +144,55 @@ async function seedDatabase() {
   if (products.length === 0) {
     console.log("Seeding products...");
     await storage.createProduct({
-      title: "Linen Blend Midi Dress",
-      description: "A breezy linen blend dress perfect for summer days. Features a fitted bodice and flowy skirt.",
-      price: "129.00",
+      title: "Handcrafted Gold Signet Ring",
+      description: "A timeless 18k gold plated signet ring with a polished finish. Perfect for everyday luxury.",
+      price: "199.00",
+      category: "Jewelry",
+      images: ["https://images.unsplash.com/photo-1611085583191-a3b158466d0b?q=80&w=2787&auto=format&fit=crop"],
+      sizes: ["6", "7", "8"],
+      colors: ["Gold"],
+      stock: 50,
+      isFeatured: true,
+      tags: ["gold", "minimal", "luxury"],
+    });
+    
+    await storage.createProduct({
+      title: "Sculptural Cuff Bracelet",
+      description: "Elegant and bold, this sculptural gold cuff adds a statement to any ensemble.",
+      price: "145.00",
+      category: "Jewelry",
+      images: ["https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2862&auto=format&fit=crop"],
+      sizes: ["One Size"],
+      colors: ["Gold"],
+      stock: 30,
+      isFeatured: true,
+      tags: ["bracelet", "gold"],
+    });
+    
+    await storage.createProduct({
+      title: "Minimalist Silk Slip Dress",
+      description: "Pure silk midi dress in a classic champagne hue. Elegant drape and effortless style.",
+      price: "245.00",
       category: "Dresses",
       images: ["https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=2883&auto=format&fit=crop"],
       sizes: ["XS", "S", "M", "L"],
-      colors: ["Beige", "White"],
-      stock: 50,
+      colors: ["Champagne", "Black"],
+      stock: 25,
       isFeatured: true,
-      tags: ["summer", "linen", "new"],
+      tags: ["silk", "premium"],
     });
     
-    await storage.createProduct({
-      title: "Silk Blouse",
-      description: "Luxurious silk blouse with a relaxed fit. A wardrobe staple.",
-      price: "89.00",
-      category: "Tops",
-      images: ["https://images.unsplash.com/photo-1551163943-3f6a29e3965e?q=80&w=2788&auto=format&fit=crop"],
-      sizes: ["S", "M", "L"],
-      colors: ["Cream", "Black"],
-      stock: 30,
-      isFeatured: true,
-      tags: ["silk", "office"],
-    });
-    
-    await storage.createProduct({
-      title: "Gold Hoops",
-      description: "Classic gold plated hoop earrings. Tarnish resistant.",
-      price: "45.00",
-      category: "Accessories",
-      images: ["https://images.unsplash.com/photo-1630019852942-f89202989a51?q=80&w=2862&auto=format&fit=crop"],
-      sizes: ["One Size"],
-      colors: ["Gold"],
-      stock: 100,
-      isFeatured: false,
-      tags: ["jewelry", "gold"],
-    });
      await storage.createProduct({
-      title: "Tailored Trousers",
-      description: "High-waisted tailored trousers in a premium wool blend.",
-      price: "110.00",
+      title: "Tailored Linen Trousers",
+      description: "Wide-leg trousers crafted from premium Italian linen.",
+      price: "180.00",
       category: "Bottoms",
       images: ["https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2787&auto=format&fit=crop"],
-      sizes: ["XS", "S", "M", "L", "XL"],
-      colors: ["Black", "Grey"],
+      sizes: ["XS", "S", "M", "L"],
+      colors: ["Sand", "Black"],
       stock: 40,
-      isFeatured: true,
-      tags: ["workwear", "pants"],
+      isFeatured: false,
+      tags: ["linen", "tailored"],
     });
   }
 }

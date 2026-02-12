@@ -5,30 +5,30 @@
 @tailwind utilities;
 
 :root {
-  /* HSL Color Space */
-  --background: 40 20% 97%;      /* Off-white/Cream #F8F6F1 */
+  /* HSL Color Space - Refined Beige Theme */
+  --background: 39 33% 97%;      /* #F5F0E6 Beige */
   --foreground: 0 0% 10%;        /* Soft Black #1A1A1A */
   
   --primary: 0 0% 10%;           /* Black */
-  --primary-foreground: 40 20% 97%; /* Cream */
+  --primary-foreground: 39 33% 97%; /* Beige */
   
-  --secondary: 35 15% 90%;       /* Darker Beige #EBE5DA */
+  --secondary: 43 50% 94%;       /* Cream #FAF7F2 */
   --secondary-foreground: 0 0% 10%;
   
-  --muted: 35 15% 90%;
-  --muted-foreground: 0 0% 40%;
+  --muted: 39 20% 94%;
+  --muted-foreground: 39 10% 40%;
   
-  --accent: 38 40% 55%;          /* Muted Gold/Bronze #BFA575 */
+  --accent: 38 30% 50%;          /* Muted Gold/Bronze */
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 35 10% 85%;
-  --input: 35 10% 85%;
+  --border: 39 20% 88%;
+  --input: 39 20% 88%;
   --ring: 0 0% 10%;
   
-  --radius: 0rem; /* Sharp edges for luxury feel, or very slight rounding */
+  --radius: 0rem; 
   
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'DM Sans', sans-serif;

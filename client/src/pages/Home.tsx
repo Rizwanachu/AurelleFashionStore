@@ -15,35 +15,48 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[85vh] w-full bg-[#f4f2ed] overflow-hidden">
-        {/* Abstract/Fashion Hero Image */}
-        {/* Unsplash: Aesthetic minimal fashion shot with neutral tones */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop"
-            alt="Hero Fashion"
-            className="w-full h-full object-cover opacity-90"
-          />
-          <div className="absolute inset-0 bg-black/10" />
+      <section className="relative h-[90vh] w-full bg-[#f4f2ed] overflow-hidden">
+        <div className="absolute inset-0 z-0 flex">
+          <div className="w-1/2 h-full relative border-r border-border">
+             <img 
+              src="https://images.unsplash.com/photo-1611085583191-a3b158466d0b?q=80&w=2787&auto=format&fit=crop"
+              alt="Luxury Jewelry"
+              className="w-full h-full object-cover grayscale-[20%]"
+            />
+            <div className="absolute top-12 left-12 z-20">
+               <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-sm leading-tight">
+                PRODUCTS ON<br />DISCOUNT <span className="text-3xl">✦</span>
+              </h2>
+            </div>
+          </div>
+          <div className="w-1/2 h-full relative">
+             <img 
+              src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2862&auto=format&fit=crop"
+              alt="Curated Collection"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute top-12 left-12 z-20">
+               <h2 className="text-4xl md:text-5xl font-serif text-white drop-shadow-sm leading-tight">
+                UNDER<br /><span className="text-6xl">199</span>
+              </h2>
+            </div>
+          </div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-start">
+        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-xl space-y-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="bg-background/80 backdrop-blur-md p-10 md:p-16 border border-border text-center pointer-events-auto"
           >
-            <span className="text-white font-medium tracking-[0.2em] text-sm uppercase">New Collection 2024</span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight">
-              Quiet Luxury <br /> Redefined
+            <span className="text-muted-foreground font-medium tracking-[0.3em] text-xs uppercase mb-4 block">Collection 2026</span>
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground leading-tight mb-8">
+              Aurelle
             </h1>
-            <p className="text-white/90 text-lg font-light max-w-md">
-              Discover our latest curation of timeless essentials crafted for the modern individual.
-            </p>
             <Link href="/shop">
-              <Button size="lg" className="bg-white text-black hover:bg-white/90 mt-4 border-0">
-                Shop Collection
+              <Button size="lg" className="bg-primary text-primary-foreground hover-elevate active-elevate-2 min-w-[200px]">
+                Explore Collection
               </Button>
             </Link>
           </motion.div>
