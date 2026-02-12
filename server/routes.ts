@@ -140,59 +140,91 @@ export async function registerRoutes(
 }
 
 async function seedDatabase() {
-  const products = await storage.getProducts();
-  if (products.length === 0) {
-    console.log("Seeding products...");
-    await storage.createProduct({
+  const productsList = await storage.getProducts();
+  if (productsList.length > 0) {
+    // Clear existing products to re-seed with jewelry theme
+    for (const p of productsList) {
+      await storage.deleteProduct(p.id);
+    }
+  }
+
+  console.log("Seeding jewelry products...");
+  const jewelryProducts = [
+    {
       title: "Handcrafted Gold Signet Ring",
       description: "A timeless 18k gold plated signet ring with a polished finish. Perfect for everyday luxury.",
       price: "199.00",
-      category: "Jewelry",
+      category: "Rings",
       images: ["https://images.unsplash.com/photo-1611085583191-a3b158466d0b?q=80&w=2787&auto=format&fit=crop"],
       sizes: ["6", "7", "8"],
       colors: ["Gold"],
       stock: 50,
       isFeatured: true,
       tags: ["gold", "minimal", "luxury"],
-    });
-    
-    await storage.createProduct({
+    },
+    {
       title: "Sculptural Cuff Bracelet",
       description: "Elegant and bold, this sculptural gold cuff adds a statement to any ensemble.",
       price: "145.00",
-      category: "Jewelry",
+      category: "Bracelets",
       images: ["https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2862&auto=format&fit=crop"],
       sizes: ["One Size"],
       colors: ["Gold"],
       stock: 30,
       isFeatured: true,
       tags: ["bracelet", "gold"],
-    });
-    
-    await storage.createProduct({
-      title: "Minimalist Silk Slip Dress",
-      description: "Pure silk midi dress in a classic champagne hue. Elegant drape and effortless style.",
-      price: "245.00",
-      category: "Dresses",
-      images: ["https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=2883&auto=format&fit=crop"],
-      sizes: ["XS", "S", "M", "L"],
-      colors: ["Champagne", "Black"],
-      stock: 25,
+    },
+    {
+      title: "Minimalist Gold Necklace",
+      description: "A delicate gold chain with a single pearl accent. Pure elegance in simplicity.",
+      price: "120.00",
+      category: "Necklaces",
+      images: ["https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=2787&auto=format&fit=crop"],
+      sizes: ["16\"", "18\""],
+      colors: ["Gold"],
+      stock: 45,
       isFeatured: true,
-      tags: ["silk", "premium"],
-    });
-    
-     await storage.createProduct({
-      title: "Tailored Linen Trousers",
-      description: "Wide-leg trousers crafted from premium Italian linen.",
-      price: "180.00",
-      category: "Bottoms",
-      images: ["https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2787&auto=format&fit=crop"],
-      sizes: ["XS", "S", "M", "L"],
-      colors: ["Sand", "Black"],
-      stock: 40,
-      isFeatured: false,
-      tags: ["linen", "tailored"],
-    });
+      tags: ["necklace", "gold", "pearl"],
+    },
+    {
+      title: "Gold Hand Chain",
+      description: "Exquisite hand chain connecting the wrist to a delicate ring, featuring minimalist accents.",
+      price: "160.00",
+      category: "Hand Chain",
+      images: ["https://images.unsplash.com/photo-1630019017590-54774358826d?q=80&w=2864&auto=format&fit=crop"],
+      sizes: ["One Size"],
+      colors: ["Gold"],
+      stock: 20,
+      isFeatured: true,
+      tags: ["hand-chain", "gold"],
+    },
+    {
+      title: "Hoop Earring Collection",
+      description: "A set of gold hoop earrings in various sizes and textures.",
+      price: "85.00",
+      category: "Earrings",
+      images: ["https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=2864&auto=format&fit=crop"],
+      sizes: ["Set"],
+      colors: ["Gold"],
+      stock: 60,
+      isFeatured: true,
+      tags: ["earrings", "gold"],
+    },
+    {
+      title: "Vintage Gold Watch",
+      description: "Sophisticated gold watch with a slim profile and elegant mesh strap.",
+      price: "299.00",
+      category: "Watches",
+      images: ["https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=2788&auto=format&fit=crop"],
+      sizes: ["One Size"],
+      colors: ["Gold"],
+      stock: 15,
+      isFeatured: true,
+      tags: ["watch", "gold", "vintage"],
+    }
+  ];
+
+  for (const product of jewelryProducts) {
+    await storage.createProduct(product);
   }
 }

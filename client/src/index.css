@@ -5,30 +5,30 @@
 @tailwind utilities;
 
 :root {
-  /* HSL Color Space - Refined Beige Theme */
-  --background: 39 33% 97%;      /* #F5F0E6 Beige */
-  --foreground: 0 0% 10%;        /* Soft Black #1A1A1A */
+  /* HSL Color Space - Luxury Gold Theme */
+  --background: 40 20% 98%;      /* Very soft warm white */
+  --foreground: 20 10% 15%;      /* Near black with warm undertone */
   
-  --primary: 0 0% 10%;           /* Black */
-  --primary-foreground: 39 33% 97%; /* Beige */
+  --primary: 43 50% 45%;         /* Refined Gold */
+  --primary-foreground: 40 20% 98%;
   
-  --secondary: 43 50% 94%;       /* Cream #FAF7F2 */
-  --secondary-foreground: 0 0% 10%;
+  --secondary: 40 15% 94%;       /* Subtle warm grey/beige */
+  --secondary-foreground: 20 10% 15%;
   
-  --muted: 39 20% 94%;
-  --muted-foreground: 39 10% 40%;
+  --muted: 40 10% 92%;
+  --muted-foreground: 20 5% 45%;
   
-  --accent: 38 30% 50%;          /* Muted Gold/Bronze */
-  --accent-foreground: 0 0% 100%;
+  --accent: 43 45% 40%;          /* Deeper Gold for accents */
+  --accent-foreground: 40 20% 98%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 39 20% 88%;
-  --input: 39 20% 88%;
-  --ring: 0 0% 10%;
+  --border: 40 15% 88%;
+  --input: 40 15% 88%;
+  --ring: 43 50% 45%;
   
-  --radius: 0rem; 
+  --radius: 0.25rem; 
   
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'DM Sans', sans-serif;
