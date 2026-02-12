@@ -16,11 +16,11 @@ export function Navbar() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/shop?category=Necklaces", label: "Necklaces" },
-    { href: "/shop?category=Earrings", label: "Earrings" },
-    { href: "/shop?category=Rings", label: "Rings" },
-    { href: "/shop?category=Bracelets", label: "Bracelets" },
-    { href: "/shop?category=Sale", label: "Sale" },
+    { href: "/shop", label: "All products" },
+    { href: "/shop?category=New", label: "New Arrivals" },
+    { href: "/contact", label: "Contact" },
+    { href: "/about", label: "About Us" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   const handleLinkClick = () => setIsOpen(false);
