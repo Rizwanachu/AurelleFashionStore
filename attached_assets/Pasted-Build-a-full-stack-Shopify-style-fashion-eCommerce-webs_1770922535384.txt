@@ -1,0 +1,118 @@
+Build a full-stack Shopify-style fashion eCommerce website called Aurelle.
+The design and layout should be inspired by the structure and minimal aesthetic of thebeige.in — clean product grids, category section, featured best sellers, simple header, neutral palette.
+
+Stack
+• Next.js (App Router)
+• Tailwind CSS
+• MongoDB with Mongoose
+• NextAuth (email + password + admin roles)
+• Cloudinary for product image uploads
+• Shiprocket API for tracking
+• Razorpay for payments
+• Deploy-ready for Vercel
+
+🎨 Visual & UI Requirements
+
+• Colors: Beige (#F5F0E6), Black (#111111), Cream & Gold accents
+• Typography: Serif for headings (premium feel), Sans for body
+• Homepage layout like thebeige.in:
+– Free shipping banner on top
+– “New Arrivals”
+– Category grid
+– Best sellers carousel
+– Instagram feed block
+– Newsletter signup
+• Product cards with hover quick actions (like “Quick View” and “Add to Cart”)
+• Minimal, airy spacing
+• Mobile-first responsiveness
+
+🛍️ Functionality Requirements
+User
+
+✔ Signup / Login / Forgot Password
+✔ Profile page with order history
+✔ Wishlist
+✔ Cart & Checkout
+✔ Razorpay + COD
+✔ Address book
+✔ Order tracking via Shiprocket API
+
+Product Management (Admin)
+
+✔ Create / Edit / Delete products
+✔ Upload images to Cloudinary
+✔ Add:
+
+Title
+
+Description
+
+Category
+
+Price & discount
+
+SKU
+
+Sizes & variants
+
+Stock
+
+Tags
+
+Featured toggle
+✔ View all orders & statuses
+✔ Update order tracking & show tracking timeline
+✔ Dashboard analytics (sales, top products, etc.)
+
+📦 Product Page Features
+
+• Image gallery with zoom
+• Variant selector (size/color)
+• Price auto-update on variant change
+• Related products
+• Estimated delivery days
+• Reviews section
+
+🛒 Cart & Checkout
+
+• Real-time cart update
+• Qty adjust & remove
+• Razorpay payments + COD
+• Address selection
+• Order confirmation email
+• Order details page
+
+🧠 SEO + Performance
+
+• Clean routes
+• Dynamic meta titles + descriptions
+• Sitemap generation
+• Image lazy loading
+
+🗃️ Folder Structure Template
+/app
+/components
+/lib
+/context
+/models
+/api
+/middleware
+/styles
+
+
+Add .env.example with placeholders for DB, Cloudinary, Razorpay, Shiprocket.
+
+📦 Admin Roles
+
+• Admin login separate dashboard
+• Protected server APIs
+• Role-based access control
+
+📍 Deployment
+
+• Instructions to deploy on Vercel
+• MongoDB Atlas setup
+• Razorpay setup
+• Shiprocket integration guide
+
+This website must feel premium and minimal like thebeige.in — not bulky or overly complicated.
