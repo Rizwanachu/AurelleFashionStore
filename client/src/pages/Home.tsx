@@ -14,12 +14,8 @@ export default function Home() {
   const collections = [
     { title: "Necklaces", image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=2787&auto=format&fit=crop" },
     { title: "Rings", image: "https://images.unsplash.com/photo-1611085583191-a3b158466d0b?q=80&w=2787&auto=format&fit=crop" },
-    { title: "Hand Chain", image: "https://images.unsplash.com/photo-1630019017590-54774358826d?q=80&w=2864&auto=format&fit=crop" },
-    { title: "Bracelets", image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2862&auto=format&fit=crop" },
     { title: "Earrings", image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=2864&auto=format&fit=crop" },
-    { title: "Watches", image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=2788&auto=format&fit=crop" },
-    { title: "Anklets", image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2850&auto=format&fit=crop" },
-    { title: "Collections", image: "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?q=80&w=2940&auto=format&fit=crop" }
+    { title: "Bracelets", image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=2862&auto=format&fit=crop" },
   ];
 
   return (

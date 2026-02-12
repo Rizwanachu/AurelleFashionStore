@@ -16,9 +16,11 @@ export function Navbar() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/shop", label: "Shop" },
-    { href: "/shop?category=New", label: "New Arrivals" },
-    { href: "/about", label: "About" },
+    { href: "/shop?category=Necklaces", label: "Necklaces" },
+    { href: "/shop?category=Earrings", label: "Earrings" },
+    { href: "/shop?category=Rings", label: "Rings" },
+    { href: "/shop?category=Bracelets", label: "Bracelets" },
+    { href: "/shop?category=Sale", label: "Sale" },
   ];
 
   const handleLinkClick = () => setIsOpen(false);

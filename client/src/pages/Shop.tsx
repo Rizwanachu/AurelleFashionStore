@@ -35,11 +35,11 @@ export default function Shop() {
             <div>
               <h3 className="font-serif font-bold mb-4">Categories</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li className="cursor-pointer hover:text-primary transition-colors">All Products</li>
-                <li className="cursor-pointer hover:text-primary transition-colors">Dresses</li>
-                <li className="cursor-pointer hover:text-primary transition-colors">Tops</li>
-                <li className="cursor-pointer hover:text-primary transition-colors">Bottoms</li>
-                <li className="cursor-pointer hover:text-primary transition-colors">Accessories</li>
+                <Link href="/shop"><li className="cursor-pointer hover:text-primary transition-colors">All Products</li></Link>
+                <Link href="/shop?category=Necklaces"><li className="cursor-pointer hover:text-primary transition-colors">Necklaces</li></Link>
+                <Link href="/shop?category=Earrings"><li className="cursor-pointer hover:text-primary transition-colors">Earrings</li></Link>
+                <Link href="/shop?category=Rings"><li className="cursor-pointer hover:text-primary transition-colors">Rings</li></Link>
+                <Link href="/shop?category=Bracelets"><li className="cursor-pointer hover:text-primary transition-colors">Bracelets</li></Link>
               </ul>
             </div>
             
